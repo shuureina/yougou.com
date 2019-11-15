@@ -1,0 +1,23 @@
+{
+  "name": "yougou.com",
+  "version": "1.0.0",
+  "description": "优购商城",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuureina/yougou.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shuureina/yougou.com/issues"
+  },
+  "homepage": "https://github.com/shuureina/yougou.com#readme"
+}

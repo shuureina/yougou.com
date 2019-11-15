@@ -1,0 +1,137 @@
+header {
+  height: 40px;
+  box-sizing: border-box;
+  background: #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul li {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+
+header ul li a {
+  line-height: 40px;
+  color: #fff;
+}
+
+header ul li .sub-nav {
+  display: none;
+  position: absolute;
+  margin-top: 4px;
+  border: 1px solid #eee;
+}
+
+header ul li:hover > a {
+  color: #999;
+}
+
+header ul li:hover .sub-nav {
+  display: block;
+}
+
+header .left-header {
+  margin-left: 145px;
+}
+
+header .left-header .border-img {
+  padding: 10px;
+  text-align: center;
+  left: 50%;
+}
+
+header .left-header .border-img span {
+  color: #333;
+}
+
+header .left-header .concern .border-img {
+  margin-left: -71px;
+}
+
+header .left-header .downLoad .border-img {
+  margin-left: -64px;
+}
+
+header .right-header {
+  margin-right: 92px;
+}
+
+header .right-header .user-item {
+  display: flex;
+}
+
+header .right-header .user-item .user-content a:hover {
+  color: #999;
+}
+
+header .right-header .user-item .slash {
+  display: block;
+  line-height: 40px;
+  padding: 0 10px;
+}
+
+header .right-header .icon-item .icon {
+  display: inline-block;
+  padding-right: 5px;
+  width: 12px;
+  height: 11px;
+  background: url(../image/css_sprites.png) -78px -174px no-repeat;
+  vertical-align: middle;
+}
+
+header .right-header .icon-item .icon.icon-shop {
+  background-position: -10px -200px;
+}
+
+header .right-header .icon-item:hover .icon-collect {
+  background-position: -110px -174px;
+}
+
+header .right-header .icon-item:hover .icon-shop {
+  background-position: -177px -83px;
+}
+
+header .right-header .affiche {
+  right: 0;
+  padding: 15px 15px 30px 20px;
+  border: 1px solid #eee;
+}
+
+header .right-header .affiche li {
+  width: 180px;
+  height: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+header .right-header .affiche li a {
+  line-height: 20px;
+  color: #999;
+}
+
+header .right-header .affiche li.item1 {
+  padding-top: 10px;
+}
+
+footer {
+  background: #333;
+}
+
+footer .feature-container {
+  border-bottom: 1px solid #666;
+}
+
+footer .feature-container .promise-list {
+  display: flex;
+}
+
+footer .feature-container .promise-list .item {
+  margin-left: 50px;
+}
+
+footer .promise-list, footer .help-container, footer .friendly-link, footer .copyright {
+  width: 1190px;
+  margin: 0 auto;
+}

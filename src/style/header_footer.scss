@@ -1,0 +1,133 @@
+@charset "utf8";
+$color:#fff;
+$h_color:#999;
+$b_color:#eee;
+$color3:#333;
+$color6:#666;
+$border:1px solid $b_color;
+header{
+    height:40px;
+    box-sizing:border-box;
+    background: $color3;
+    display:flex;
+    justify-content:space-between;
+    ul{
+        
+        li{
+            float: left;
+            margin-left:20px;
+            position:relative;
+            a{
+             line-height:40px;
+             color:$color; 
+          }
+          .sub-nav{
+              display: none;
+              position:absolute;
+              margin-top:4px;
+              border:$border;   
+          }
+          &:hover{
+              &>a{
+                  color:$h_color;
+              }
+              .sub-nav{
+                  display: block;
+              }
+          }
+        }
+    }
+  
+    .left-header{
+        margin-left:145px;
+          .border-img{
+              padding:10px;
+              text-align: center;
+              left:50%;
+              span{
+                  color:$color3;
+                }
+            }
+            .concern .border-img{
+                margin-left: -71px;
+            }
+            .downLoad .border-img{
+                margin-left:-64px;
+            }
+    }
+    .right-header{
+        margin-right:92px;
+        .user-item{
+           display: flex;
+           .user-content{
+               a:hover{
+                   color:$h_color;
+               }
+           }
+            .slash{
+                display: block;
+                line-height: 40px;
+                padding:0 10px;
+            }
+        }
+         .icon-item{
+                //  display: block;
+                 .icon{
+                    display: inline-block;
+                    padding-right:5px;
+                    width:12px;
+                    height: 11px;
+                     background: url(../image/css_sprites.png) -78px -174px no-repeat;
+                     vertical-align: middle;
+                    
+                     &.icon-shop{
+                         background-position: -10px -200px;
+                     }
+                 }
+                     &:hover{
+                         .icon-collect{                        background-position: -110px -174px;
+    
+                         }
+                         .icon-shop{
+                            background-position: -177px -83px;
+    
+                         }
+                     }
+         }
+        .affiche{
+            right:0;
+            padding:15px 15px 30px 20px;
+            border:$border;
+            li{
+                 width:180px;
+                 height: 20px;
+                 padding-bottom: 8px;
+                 border-bottom:$border;
+                 a{
+                     line-height: 20px;
+                     color:$h_color;
+                 }
+              &.item1{
+                  padding-top:10px;
+              }   
+            }
+        }
+    }
+}
+
+footer{
+    background: $color3;
+    .feature-container{
+        border-bottom:1px solid $color6;
+        .promise-list{
+            display:flex;
+           .item{
+               margin-left:50px;
+           } 
+        }
+    }
+    .promise-list,.help-container,.friendly-link,.copyright{
+        width: 1190px;
+        margin:0 auto;
+    }
+}
