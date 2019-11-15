@@ -1,0 +1,245 @@
+@charset "utf8";
+@import './comm.scss';
+
+// log-container start
+.log-container{
+    background: $color;
+    position: relative;
+.header-log{
+    padding:55px 0;
+    margin:0 auto;
+    width:98px;
+}
+.nav-container{
+        width:$width;
+        height:50px;
+        margin:0 auto;
+        display:flex;
+        justify-content:space-between;
+    .nav-list{
+       width:930px;
+       display:flex;
+       li{
+           width:80px;
+           font-size:$nav_fs;
+       }
+       .item-first{
+           display: none;
+           padding:6px 8px 18px 0;
+           img{
+               width: 60px;
+               height: 38px;
+           }
+       }
+       .item{
+           padding:15px;
+           a{
+               color:$color3;
+               font-weight:$nav_fw;
+               &:hover{
+                   text-decoration:underline;
+               }
+           }
+       }
+    }
+
+    .nav-search-wrap{
+        margin:15px 0 0 80px;
+        width:180px;
+        height: 25px;
+        .nav-search{
+            width:100%;
+            height: 100%;
+            box-sizing:border-box;
+            border-bottom:1px solid $color3;
+            .search-box{
+                padding: 0;
+                width: 160px;
+                border: 0;
+                outline: 0;
+                font-size: 12px;
+                height: 20px;
+            }
+            .icon{
+                cursor:pointer;
+                display: inline-block;
+                width: 15px;
+                height: 16px;
+                background: url(../image/css_sprites.png) -177px -10px no-repeat;
+            }
+            .search-list{
+                display: none;
+                position:absolute;
+                top:216px;
+                width:180px;
+                background: $color;
+                border:1px solid $color3;
+                box-shadow:0 0 2px $color3;
+                li{
+                    cursor:pointer;
+                    line-height:24px;
+                    padding:0 10px;
+                    &.item{
+                        display:flex;
+                        justify-content:space-between;
+                        .search-item{
+                            width: 70px;
+                            white-space:nowrap;
+                            text-overflow:ellipsis;
+                            overflow:hidden;
+                        }
+                    }
+                    &.close{
+                        border-top:$border;
+                        text-align:right;
+                    }
+                }
+            }
+        }
+    }
+}
+.sub-nav-wrap{
+    display: none;
+    position:absolute;
+    top:222px;
+    padding:30px 0 70px 0;
+    width:100%;
+    background: $color;
+    border-bottom:$bt_bor;
+    .sub-nav-list{
+        width:$width;
+        margin:0 auto;
+        display: flex;
+        dl{
+            margin:0 70px;
+            &:first-of-type{
+                 margin:0 70px 0 0;
+            }
+            dt{
+                padding-bottom:13px;
+                a{
+                    font-size:16px;
+                    color:$color3;
+                    font-weight:$nav_fw;
+                }
+            }
+            dd{
+                 margin-top:12px;
+                 width:60px;
+                a{
+                    color:$color6;
+                }
+            }
+        }
+    }
+}
+.line{
+    border-bottom:$border;
+}
+
+// 导航条的滚轮高小于0时固定定位
+&.nav-fixed{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    .line{
+        border-bottom:$bt_bor;
+    }
+    .header-log{
+        display: none;
+    }   
+    .nav-list {
+        .item-first{
+        display: block;
+        }  
+        .item{
+            padding:9px;
+        } 
+    }
+ }
+    
+
+}
+// log-container end
+
+// banner start
+
+.banner{
+    width:100%;
+    height:550px;
+    overflow: hidden;
+    position: relative;
+    .pic-list{
+        width:4000px;
+        height: 100%;
+        display: flex;
+
+        .pic-item{
+            width: 1263px;
+            height: 100%;
+            a{
+                display:block;
+                height:100%;
+                background: url(../image/ban1.jpg) center center no-repeat;
+            }
+           &:last-of-type a{
+               background-image: url(../image/ban2.jpg);
+           }
+        }
+    }
+    .arrows-wrap{
+         position:absolute;
+         top:50%;
+         margin-top:-20px;
+         padding: 0 20px;
+         width:100%;
+         box-sizing: border-box;
+         cursor:pointer;
+         .arrows{
+               opacity:0;
+               padding:8px 5px;
+               background: rgba(0,0,0,.1);
+               border-radius: 2px;
+             i{
+                 display: block;
+                 width:13px;
+                 height:25px;
+                 background-image: url(../image/css_sprites.png);
+             }
+
+             &:hover{
+                opacity: 1;
+             }
+         }
+         .arrow-l{
+             float: left;
+             i{
+                 background-position: -104px -57px;
+             }
+         }
+         .arrow-r{
+             float: right;
+             i{
+                 background-position: -105px -11px;
+             }
+         }
+       
+    }
+    .circle-list{
+        position: absolute;
+        bottom:20px;
+        right:60px;
+        display: flex;
+           li{
+               width:30px;
+               height: 4px;
+               background: rgba(0,0,0,.1);
+               &.active{
+                background: $b_color;
+               }
+           }
+    }
+}
+
+//banner end

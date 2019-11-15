@@ -22,6 +22,7 @@ header ul li .sub-nav {
   position: absolute;
   margin-top: 4px;
   border: 1px solid #eee;
+  background: #fff;
 }
 
 header ul li:hover > a {
@@ -117,6 +118,16 @@ header .right-header .affiche li.item1 {
 
 footer {
   background: #333;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .promise-list, footer .help-container, footer .friendly-link, footer .copyright {
+  width: 1190px;
+  margin: 0 auto;
 }
 
 footer .feature-container {
@@ -124,14 +135,126 @@ footer .feature-container {
 }
 
 footer .feature-container .promise-list {
+  padding: 47px 0;
   display: flex;
 }
 
-footer .feature-container .promise-list .item {
+footer .feature-container .promise-list li {
+  font-size: 18px;
+}
+
+footer .feature-container .promise-list li.item {
   margin-left: 50px;
 }
 
-footer .promise-list, footer .help-container, footer .friendly-link, footer .copyright {
-  width: 1190px;
-  margin: 0 auto;
+footer .feature-container .promise-list li .icon {
+  display: inline-block;
+  margin-right: 10px;
+  width: 27px;
+  height: 30px;
+  background: url(../image/css_sprites.png) -10px -10px no-repeat;
+  vertical-align: middle;
+}
+
+footer .feature-container .promise-list li .icon.icon-exchange {
+  background-position: -57px -57px;
+}
+
+footer .feature-container .promise-list li .icon.icon-spread {
+  background-position: -10px -57px;
+}
+
+footer .feature-container .promise-list li .icon.icon-service {
+  background-position: -57px -10px;
+}
+
+footer .guid-container {
+  display: flex;
+}
+
+footer .guid-container dl {
+  margin-right: 90px;
+}
+
+footer .guid-container dl dt {
+  padding: 25px 0;
+}
+
+footer .guid-container dl dd {
+  padding-bottom: 20px;
+}
+
+footer .guid-container dl dd a {
+  color: #666;
+}
+
+footer .guid-container dl dd a:hover {
+  color: #fff;
+}
+
+footer .national-certification {
+  display: flex;
+}
+
+footer .national-certification .content, footer .national-certification .qr-code {
+  display: flex;
+}
+
+footer .national-certification .content {
+  margin-top: 160px;
+}
+
+footer .national-certification .content li {
+  margin-right: 10px;
+}
+
+footer .national-certification .content li img {
+  display: inline-block;
+  width: 124px;
+  height: 47px;
+}
+
+footer .national-certification .qr-code {
+  padding-left: 152px;
+  padding-top: 56px;
+  text-align: center;
+}
+
+footer .national-certification .qr-code .code-img-right {
+  margin-left: 54px;
+}
+
+footer .national-certification .qr-code .border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  width: 120px;
+  height: 120px;
+  background: #fff;
+}
+
+footer .friendly-link {
+  padding: 20px 0;
+}
+
+footer .friendly-link .content {
+  display: flex;
+}
+
+footer .friendly-link .content li {
+  color: #666;
+}
+
+footer .friendly-link .content li a {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+footer .friendly-link .content li a.title-first {
+  padding-left: 0;
+}
+
+footer .copyright {
+  padding-bottom: 30px;
 }
