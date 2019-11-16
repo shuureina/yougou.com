@@ -1,0 +1,82 @@
+@charset "utf8";
+
+@import'./comm.scss';
+
+
+.good_list_wrap{
+    width:$width;
+    margin:0 auto;
+    .gl-sub-wrap{
+
+        display: flex;
+        .gl-sub-navlist{
+            width: 180px;
+            height: 256px;
+        }
+        .gl-sub-content{
+            width:1010px;
+            .sub-wrap{
+                margin-top:20px;
+                .sub-tab-title{
+                    display: flex;
+                    justify-content: space-between;
+                    height: 50px;
+                    border-bottom:1px solid #eee;
+                    line-height: 50px;
+                    .title-tabs{
+                        display: flex;
+                        font-size:14px;
+                        li{
+                            padding:0 30px;
+                            a{
+                                color:#333;
+                            }
+                            &.active{
+                                     
+                                a{
+                                    font-weight: bold;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    .next-page{
+                        a{
+                            color:#999;
+                            &:hover{
+                                color:#333;
+                                text-decoration:underline;
+
+                            }
+                        }
+                    }
+                }
+                .sub-products-wrap{
+                    margin:30px auto;
+                    overflow: hidden;
+                    .sub-products-content{
+                        .swiper-item{
+                            float: left;
+                            width: 230px;
+                            .price-wrap{
+                                font-size:10px;
+                                strong,del>span{
+                                    font-size:16px;
+                                }
+                                .disPrice{
+                                    font-weight: bolder;
+                                }
+                                .oriPrice{
+                                    display: inline-block;
+                                    padding:0 10px;
+                                    color:#ccc;
+                                    font-weight: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

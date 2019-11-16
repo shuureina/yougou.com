@@ -1,0 +1,85 @@
+.good_list_wrap {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.good_list_wrap .gl-sub-wrap {
+  display: flex;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-navlist {
+  width: 180px;
+  height: 256px;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content {
+  width: 1010px;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap {
+  margin-top: 20px;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-tab-title {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom: 1px solid #eee;
+  line-height: 50px;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-tab-title .title-tabs {
+  display: flex;
+  font-size: 14px;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-tab-title .title-tabs li {
+  padding: 0 30px;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-tab-title .title-tabs li a {
+  color: #333;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-tab-title .title-tabs li.active a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-tab-title .next-page a {
+  color: #999;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-tab-title .next-page a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-products-wrap {
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-products-wrap .sub-products-content .swiper-item {
+  float: left;
+  width: 230px;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-products-wrap .sub-products-content .swiper-item .price-wrap {
+  font-size: 10px;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-products-wrap .sub-products-content .swiper-item .price-wrap strong, .good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-products-wrap .sub-products-content .swiper-item .price-wrap del > span {
+  font-size: 16px;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-products-wrap .sub-products-content .swiper-item .price-wrap .disPrice {
+  font-weight: bolder;
+}
+
+.good_list_wrap .gl-sub-wrap .gl-sub-content .sub-wrap .sub-products-wrap .sub-products-content .swiper-item .price-wrap .oriPrice {
+  display: inline-block;
+  padding: 0 10px;
+  color: #ccc;
+  font-weight: normal;
+}
