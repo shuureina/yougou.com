@@ -21,7 +21,8 @@ header{
               position:absolute;
               margin-top:4px;
               border:$border; 
-              background: $color;  
+              background: $color;
+              z-index:999;
           }
           &:hover{
               &>a{
@@ -222,5 +223,13 @@ footer{
     }
     .copyright{
         padding-bottom:30px;
+    }
+    &.footer1{
+        text-align: center;
+        background: $color;
+        color:$color6;
+        a{
+            color:#aaa;
+        }
     }
 }

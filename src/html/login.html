@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优购网_用户登录</title>
+    <meta name="keywords" content="优购网">
+    <meta name="description" content="优购网">
+    
+    <link rel="stylesheet" href="../style/rest.min.css">
+    <link rel="stylesheet" href="../style/header_footer.min.css">
+    <link rel="stylesheet" href="../style/res-log.min.css">
+</head>
+<body>
+  <!-- header start  -->
+    <header>
+        <ul class="left-header">
+            <li class="concern">
+              <a href="javascript:;">关注</a>
+              <!-- 二级导航 -->
+              <div class="sub-nav border-img">
+                <img src="../image/weChat.jpg" alt="关注">
+                 <span>关注优购公众号</span>
+              </div>
+            </li>
+            <li class="downLoad">
+                <a href="javascript:;">下载APP</a>
+              <div class="sub-nav border-img">
+                <img src="../image/app.jpg" alt="下载APP">
+                <span>优购APP下载</span>
+              </div>
+            </li>
+        </ul>
+        <ul class="right-header" id="top_nav">
+            <li class="user-item">
+                <div class="login user-content">
+                    <a href="javascript:;">登录</a>
+                </div>
+                  <span class="slash">/</span>
+                <div class="register user-content">
+                    <a href="javascript:;">注册</a>
+                </div>
+            </li>
+           
+            <li class="collect-item icon-item"><a href="javascript:;"><i  class="icon icon-collect"></i> 收藏</a></li>
+            <li class="shop-item icon-item"><a href="javascript:;"><i  class="icon icon-shop"></i> 购物袋</a></li>
+            <li class="notice">
+                <a href="javascript:;">公告</a>
+                <!-- 公告二级导航 -->
+                <ul class="affiche sub-nav">
+                     <li class="item"><a href="javascript:;">优购客服电话变更</a></li>
+                     <li class="item item1"><a href="javascript:;">关闭分享购频道</a></li>
+                     <li class="item item1"><a href="javascript:;">提醒会员谨防诈骗电话</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <!--header end  -->
+    <div class="container res-contianer">
+      <div class="title-wrap">
+          <div class="logo-img">
+              <a href="./index.html">
+                <img src="../image/signin-register-logo.png" alt="优购logo">
+            </a>
+            </div>
+          <div class="title">用户登录</div>
+      </div>
+      <div class="res-log-contant log-contant">
+          <a class="bg-link" href="../html/index.html" target="_blank"></a>
+          <div class="form-wrap">
+
+              <ul class="log-tabs">
+                  <li class="log-item active"><a href="javascript:;">账户密码登录</a></li>
+                  <li class="log-item"><a href="javascript:;">手机号快捷登录</a></li>
+              </ul>
+              <div class="form-container">
+                    <div class="reg-list-wrap show">
+                            <dl class="reg-list">
+                                    <dd>
+                                        <div class="form-group">
+                                            <label for="username"><i class="icon icon-un"></i></label><input type="text" id="username" name="username" placeholder="手机号/会员名称/邮箱">  
+                                        </div>
+                                    </dd>
+                                    <dt>
+                                        <div class="errortips">
+                                          请输入账号
+                                        </div>
+                                        <div class="righttips"></div>
+                                    </dt>
+                                </dl>
+                            <dl class="reg-list">
+                                <dd>
+                                    <div class="form-group">
+                                        <label for="password"><i class="icon icon-psw"></i></label><input type="password" id="password" name="password" placeholder="请输入密码">   
+                                    </div>
+                                </dd>
+                                <dt>
+                                    <div class="errortips">
+                                        请输入密码
+                                    </div>
+                                    <div class="righttips"></div>
+                                </dt>
+                            </dl> 
+
+                </div>
+                  <div class="reg-list-wrap">
+                      <dl class="reg-list">
+                          <dd>
+                              <div class="form-group">
+                                  <label for="phone">手机号</label><input type="text" id="phone" name="phone" placeholder="请输入您的手机号码">  
+                              </div>
+                          </dd>
+                          <dt>
+                              <div class="errortips">
+                                请输入手机号码
+                              </div>
+                              <div class="righttips"></div>
+                          </dt>
+                      </dl>
+                      <dl class="reg-list mobile-list">
+                            <dd>
+                                <div class="form-group mobile-wrap">
+                                    <label for="mobile_code">短信验证码</label><input type="text" id="mobile_code" name="mobile_code">   
+                                </div>
+                                <div class="getcode">
+                                    <button>获取验证码</button>
+                                </div>
+                            </dd>
+                            <dt>
+                                <div class="errortips">
+                                    请输入短信验证码
+                                </div>
+                                <div class="righttips"></div>
+                            </dt>
+                        </dl>
+                      <!-- <dl class="reg-list code-list">
+                          <dd>
+                              <div class="form-group code-wrap">
+                                  <label for="check_code">验证码</label><input type="text" id="check_code" name="check_code">   
+                              </div>
+                              <div class="code-img">
+                                  Ade3
+                              </div>
+                          </dd>
+                          <dt>
+                              <div class="errortips">
+                                  请输入验证码
+                              </div>
+                              <div class="righttips"></div>
+                          </dt>
+                      </dl> -->
+                     
+                    </div>
+               
+                  <div class="submit-wrap">
+                      <input type="button" class="log-sub" value="点击登录" title="立即登录">
+                  </div>
+              </div>
+              <div class="cooperation">
+                    使用合作网站账号登录优购：
+              </div>
+              <div class="coop_link">
+                    <a href="javascript:;"  class="we_chat f_blue">&nbsp;</a>|
+                    <a href="javascript:;" class="coop_zpay f_blue">&nbsp;</a> |
+                    <a href="javascript:;" class="coop_qq f_blue">&nbsp;</a> |
+                    <a href="javascript:;" class="coop_sina f_blue">&nbsp;</a> |
+                    <a href="javascript:;" class="coop_people f_blue">&nbsp;</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- footer start  -->
+    <footer class="footer1">
+    
+         <div class="copyright">
+                    div>
+                      Copyright © 2011-2016 Yougou Technology Co., Ltd.
+                      <a href="javascript:;" target="_blank" rel="nofollow">粤ICP备09070608号-4</a>
+                      增值电信业务经营许可证：
+                      <a href="javascript:;" target="_blank" rel="nofollow">粤B2-20190636
+                      </a>&nbsp;
+                      <span>深公网安备：4403101910665 </span>
+                      <a target="_blank" href="javascript:;">
+                        <span>粤公网安备 44030502000017号</span>
+                      </a>
+                    </p>
+            </div>
+    </footer>
+    <!-- footer end -->
+    </body>
+    </html>

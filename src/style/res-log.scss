@@ -1,0 +1,278 @@
+@charset 'utf8';
+@import './comm.scss';
+
+.title-wrap{
+    margin:0 auto;
+    width:$w9;
+    padding:13px 0;
+    display: flex;
+    .logo-img{
+        padding:5px 30px 5px 0;
+        margin-right:30px;
+        border-right:1px solid #e6e6e6;
+        img{
+            vertical-align: middle;
+        }
+    }
+    .title{
+        font:18px/42px normal;
+    }
+}
+
+.res-log-contant{
+    width: 100%;
+    height:553px;
+    position:relative;
+    .bg-link{
+        position:absolute;
+        top:0;
+        left:0;
+        display:block;
+        width: 100%;
+        height: 100%;
+        background: url(../image/img01.jpg) center no-repeat;
+        z-index: 0;
+    }
+    .form-wrap{
+        position:absolute;
+        top:0;
+        left:50%;
+        margin-left:115px;
+        background: $color;
+        width:378px;
+        height: 530px;
+        margin-top:12px;
+        box-sizing:border-box;
+        .log-tabs,.reg-tabs{
+            margin:24px 15px 0 15px;
+            display: flex;
+            li{
+
+                height: 40px;
+                line-height: 40px;
+                background: #f3f3f3;
+                text-align:center;
+                a{
+                    color:$color3;
+                    &:hover{
+                        color:#666;
+                    }
+                }
+                &.active{
+                     background: $color3;
+                     a{
+                         color:#fff;
+                     }
+               }
+            }
+        }
+        .reg-tabs{
+            justify-content:center;
+            border-bottom:1px solid #f3f3f3;
+            li{
+                &.reg-item{
+                    width: 123px;
+                }
+                &.tab-item1{
+                    margin-right:5px;
+                }
+            }
+        }
+        .log-tabs{
+            .log-item{
+                 width:174px;
+            }
+        }
+        .form-container{
+            padding-top:30px;
+            padding-left:10px;
+            margin:0 15px;
+            .errortips{
+                display: none;
+                padding-left:25px;
+                 background:url(../image/icon_sig_reg.png) -180px -95px no-repeat; 
+            }
+            input,button{
+                font-size:12px;
+            }
+            .reg-list{
+                padding-left:8px;
+                position: relative;
+                color:#333;
+                dd{
+                    width:100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .form-group{
+                        height: 38px;
+                        border:1px solid #e3e2e2;
+                        box-sizing:border-box;
+                        line-height:38px;
+                        display: flex;
+                        justify-content: space-between;
+                        label{
+                            display: inline-block;
+                            margin-left:10px;
+                            width:60px;
+                        }
+                        input{
+                            width:235px;
+                            border:none;
+                            outline: none;
+                        }
+                        &.code-wrap{
+                            width:200px;
+                            input{
+                               width:128px;
+                            }
+                        }
+                        &.mobile-wrap{
+                            width: 235px;
+                            input{
+                                width: 155px;
+                            }
+                        }
+                        &.active{
+                            border-color:#333;
+                        }
+                    }
+                    .code-img{
+                        margin-right:17px;
+                        width: 110px;
+                        height: 40px;
+                        text-align: center; 
+                        font:32px/40px bolder;
+                        color: #193caa; 
+                        text-decoration:line-through;
+                        text-shadow: 2px 2px 2px #193caa;
+                        font-style:oblique;
+                        letter-spacing:5px;
+                        cursor: default;
+                    }
+                    .getcode{
+                        margin-right:17px;
+                        button{
+                            width: 73px;
+                            height: 38px;
+                            border:none;
+                            color:#fff;
+                            background: #333;
+                            cursor: pointer;
+                            &:hover{
+                                 background: #666;
+                            }
+                        }
+                    }
+                }
+                dt{
+                    height: 28px;
+                    width: 100%;
+                    line-height: 18px;
+                  
+                    .errortips{
+                        margin-top:4px;   
+                    }
+                    .righttips{
+                        display: none;
+                        position: absolute;
+                        right:20px;
+                        top:10px;
+                        width: 30px;
+                        height: 20px;
+                        background: url(../image/reg_sprite2.png) -314px 0 no-repeat;
+                    }
+                }
+                &.code-list{
+
+                    .righttips{
+                        right:128px;
+                    }
+                }
+                &.mobile-list{
+                    .righttips{
+                        right:92px;
+                    }
+                }
+            }
+            .form-group1{
+                text-align: center;
+                a{
+                    color:#666;
+                }
+              span{
+                  color:#333;
+              }
+            }
+            .submit-wrap{
+                padding-top:5px;
+                padding-left:10px;
+                input{
+                   width:313px;
+                   height:38px;
+                   border:none;
+                   outline: none;
+                   cursor:pointer;
+                   background: #333;
+                   color:#fff;
+                   font-size: 16px;
+                }
+            }
+        }
+    }
+    &.log-contant{
+        .form-wrap{
+            margin-top:50px;
+            height: 450px;
+            .reg-list-wrap{
+                display: none;
+                &.show{
+                    display: block;
+                }
+                .form-group{
+                    .icon{
+                        display: block;
+                        width: 48px;
+                        height: 36px;
+                        background: url(../image/icon_sig_reg.png) -180px -27px no-repeat;
+                        &.icon-psw{
+                           background-position: -180px -61px;
+                        }
+                    }
+
+                }
+            }
+            .cooperation{
+                margin:10px 0 5px;
+                color:#999;
+                text-align: center;
+             }
+             .coop_link{
+                 display:flex;
+                 justify-content:center;
+                  height: 32px;
+                  line-height: 32px;
+                  color: #e1e1e1;
+                  a{
+                      display:inline-block;
+                      padding:18px 16px;
+                      margin:0 10px;
+                      line-height: 54px;
+                      background: url(../image/icon_sig_reg.png)  -36px -20px no-repeat;
+                     &.coop_zpay{
+                         background-position: -73px -20px;
+                    }
+                    &.coop_qq{
+                        background-position:-110px -20px;
+                    }
+                    &.coop_sina{
+                        background-position:-37px -57px;
+                     }
+                     &.coop_people{
+                        background-position:-73px -57px;
+                     }
+                 }
+             }
+
+         }
+    }
+}

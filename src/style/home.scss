@@ -181,10 +181,10 @@
             a{
                 display:block;
                 height:100%;
-                background: url(../image/ban1.jpg) center center no-repeat;
+                background: url(../image/ban3.jpg) center center no-repeat;
             }
            &:last-of-type a{
-               background-image: url(../image/ban2.jpg);
+               background-image: url(../image/ban4.jpg);
            }
         }
     }
@@ -229,17 +229,260 @@
     .circle-list{
         position: absolute;
         bottom:20px;
-        right:60px;
+        right:5%;
         display: flex;
            li{
-               width:30px;
-               height: 4px;
-               background: rgba(0,0,0,.1);
+               width:20px;
+               height: 6px;
+               margin-left:6px;
+               background: rgba(0,0,0,.7);
                &.active{
                 background: $b_color;
+                width:31px;
+                opacity:0.4;
                }
            }
     }
 }
 
 //banner end
+
+.yg-command{
+    text-align:center;
+    .command-title{
+        margin:66px 0 30px;
+        color:$color3;
+        h1{
+            height:63px;
+            font-size:42px;
+        }
+        .tabs{
+            margin:25px 0 40px;
+            display: flex;
+            justify-content:center;
+            .tabs-item{
+                padding:0 10px;
+                font-size:16px;
+                cursor:pointer;
+                &.active{
+                    text-decoration:underline;
+                }
+            }
+        }   
+    }
+}
+// 新品推荐
+.new-products{
+          .command-contant{
+              margin:0 auto;
+              position: relative;
+              width:$width;
+              height:415px;
+              box-sizing:border-box;
+              .swiper-container{
+                  width:920px;
+                  margin:0 auto;
+                  overflow: hidden;
+                  .swiper-item-wrap{
+                      width:920*3px;
+                      display:flex;
+                      .swiper-item{
+                          padding:10px;
+                          width:210px;
+                          .goods-img{
+                              background:$color;
+                              a{
+                                  display:inline-block;
+                                  margin:30px 0;
+                                  width:210px;
+                                  height:210px;
+                                  img{
+                                      height: 100%;
+                                      width:100%;
+                                  }
+                              }
+                          }
+                          .brand-img{
+                              margin-top:15px;
+                              width:54px;
+                              height:24px;
+                          }
+                          p{
+                              margin-top:10px;
+                              overflow: hidden;
+                              white-space:nowrap;
+                              text-overflow:ellipsis;
+                              a{
+                                  color:$color6;
+                              }
+                          }
+                          .price-wrap{
+                              margin:15px 0  10px;
+                              position: relative;
+                              font-weight:$nav_fw;
+                            font-size:16px;
+                            color:$color3;
+                             .colloct{
+                                 display: none;
+                                 position: absolute;
+                                 top:5px;
+                                 right:8px;
+                                 width: 15px;
+                                 height:15px;
+                                 background: url(../image/css_sprites.png) -38px -243px;
+                             }
+                          }
+                          &:hover{
+                              background: #f6f6f6;
+                              .colloct{
+                                  display: block;
+                              }
+                          }
+                      }
+                  }
+              }
+              //左右箭头
+              .arrows{
+                  width:$width;
+              }
+
+          }
+}
+
+//今日主推大牌
+.brands{
+     .command-contant{
+        padding-top:60px;
+        .brand-pictures{
+            a{
+               color:$color;
+                span{
+                    line-height: 402px;
+                }
+                
+            }
+        }
+
+     }
+        .swiper-wrap{
+            padding:66px 0;
+            width:100%;
+            position: relative;
+            .swiper-container{
+                width:920px;
+                margin:0 auto;
+                overflow:hidden;
+                .swiper-item-wrap{
+                    width:990*2px;
+                    display: flex;
+                    .swiper-item{
+                        margin:0 12px;
+                        display:inline-block;
+                        width:68px ;
+                        height:31px;
+                        img{
+                            width:100%;
+                            height:100%;
+                        }
+                    }
+                }
+            }
+             //左右箭头
+             .arrows{
+                width: 100%;
+              }
+
+        }
+
+        
+}
+
+
+
+.new-products,.brands{
+     //左右箭头
+     .arrows{
+        position:absolute;
+        top:50%;
+        margin-top:-20px;
+        display: flex;
+        justify-content:space-between;
+        cursor: pointer;
+        div{
+            width: 13px;
+            height: 26px;
+            &.arrow-l{
+                background: url(../image/css_sprites.png) -104px -56px;
+            }
+            &.arrow-r{
+                background: url(../image/css_sprites.png) -105px -11px;
+            }
+        }
+      }
+}
+
+.brand-fashion{
+    .command-title{
+        h3{
+            font-size:24px;
+        }
+    }
+    .brand-pictures1{
+       margin:10px 0 40px;
+    }
+    .brand-pictures2{
+        margin-bottom:110px; 
+        a{
+           color:$color;
+           font-size:14px;
+            span{
+                line-height: 250px;
+            }
+            
+        }
+    }
+    .map-img{
+        area{
+            border:0;
+            outline:0;
+        }
+    }
+}
+
+.brands,.brand-fashion{
+    .command-contant{
+        margin:0 auto;
+        width:$w9;
+        .brand-pictures{
+            display: flex;
+            justify-content:space-around;
+            li{
+                a{
+                    display:inline-block;
+                    position: relative;
+                    &>img{
+                        vertical-align:middle;
+                    }
+                    span{
+                        display: inline-block;
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        width:100%;
+                        height:100%;
+                        // line-height:402px;
+                        background: rgba(0,0,0,.8);
+                       &.hide{
+                           opacity:0;
+                       }
+                    }
+                }
+                &:hover{
+                      span.show{
+                          opacity: 0.8;
+                      }
+                }
+            }
+        }
+    }
+}

@@ -23,6 +23,7 @@ header ul li .sub-nav {
   margin-top: 4px;
   border: 1px solid #eee;
   background: #fff;
+  z-index: 999;
 }
 
 header ul li:hover > a {
@@ -257,4 +258,14 @@ footer .friendly-link .content li a.title-first {
 
 footer .copyright {
   padding-bottom: 30px;
+}
+
+footer.footer1 {
+  text-align: center;
+  background: #fff;
+  color: #666;
+}
+
+footer.footer1 a {
+  color: #aaa;
 }
