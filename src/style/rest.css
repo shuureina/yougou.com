@@ -84,3 +84,8 @@ q:before, q:after, blockquote:before, blockquote:after {
 a {
   text-decoration: none;
 }
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
