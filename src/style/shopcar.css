@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.shopcar-container a {
+  color: #666;
+}
+
 .shopcar-container .logo-title-wrap {
   margin-top: 15px;
   height: 50px;
@@ -83,6 +87,10 @@
   display: flex;
 }
 
+.shopcar-container .content-wrap .goods-item:last-of-type {
+  border-bottom: none;
+}
+
 .shopcar-container .content-wrap .title-list {
   display: flex;
   height: 42px;
@@ -144,4 +152,118 @@
 .shopcar-container .content-wrap .goods-list .goods-item .single-list li:nth-of-type(8) {
   padding: 16px;
   width: 120px;
+}
+
+.shopcar-container .content-wrap .goods-list .goods-item .single-list li.pd-price, .shopcar-container .content-wrap .goods-list .goods-item .single-list li.pd-count, .shopcar-container .content-wrap .goods-list .goods-item .single-list li.pd-totalPrice, .shopcar-container .content-wrap .goods-list .goods-item .single-list li.pd-handle {
+  text-align: center;
+}
+
+.shopcar-container .content-wrap .goods-list .goods-item .single-list li.pd-count {
+  display: flex;
+}
+
+.shopcar-container .content-wrap .goods-list .goods-item .single-list li.pd-count input, .shopcar-container .content-wrap .goods-list .goods-item .single-list li.pd-count a {
+  border: 1px solid  #ccc;
+}
+
+.shopcar-container .content-wrap .goods-list .goods-item .single-list li.pd-count input {
+  width: 28px;
+  height: 22px;
+  border-left: 0;
+  border-right: 0;
+}
+
+.shopcar-container .content-wrap .goods-list .goods-item .single-list li.pd-count a {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 20px;
+  color: #000;
+  font-size: 16px;
+}
+
+.shopcar-container .content-wrap .goods-list .goods-item .single-list li.pd-totalPrice {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.shopcar-container .content-wrap .content-del-wrap {
+  height: 40px;
+  padding-bottom: 20px;
+}
+
+.shopcar-container .content-wrap .content-del-wrap > div {
+  padding: 10px 37px 0 0;
+}
+
+.shopcar-container .content-wrap .content-settlement-wrap {
+  justify-content: space-between;
+  height: 54px;
+  background: #eee;
+  text-align: center;
+  border-bottom: none;
+}
+
+.shopcar-container .content-wrap .content-settlement-wrap a {
+  display: inline-block;
+  color: #fff;
+  background: #333;
+}
+
+.shopcar-container .content-wrap .content-settlement-wrap .settlement-l a {
+  margin: 15px 0 0 20px;
+  height: 21px;
+  width: 72px;
+  line-height: 21px;
+}
+
+.shopcar-container .content-wrap .content-settlement-wrap .settlement-r {
+  display: flex;
+  line-height: 54px;
+}
+
+.shopcar-container .content-wrap .content-settlement-wrap .settlement-r .goods-allPrice {
+  margin-right: 50px;
+  font-weight: bold;
+}
+
+.shopcar-container .content-wrap .content-settlement-wrap .settlement-r .goods-allPrice .allprice {
+  font-size: 16px;
+}
+
+.shopcar-container .content-wrap .content-settlement-wrap .settlement-r .goods-allPrice .allprice strong {
+  font-size: 20px;
+  color: #333;
+}
+
+.shopcar-container .content-wrap .content-settlement-wrap .settlement-r .settle {
+  display: block;
+  width: 129px;
+  height: 54px;
+  font-size: 14px;
+}
+
+.shopcar-container .cart_btinfo {
+  margin-bottom: 20px;
+  text-align: right;
+  line-height: 22px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.shopcar-container .cart_btinfo .cart_bz i {
+  margin-left: 10px;
+  display: inline-block;
+  height: 16px;
+  width: 18px;
+  vertical-align: middle;
+  background: url(../image/shopcart-sprite-v4.png) 0 0 no-repeat;
+}
+
+.shopcar-container .cart_btinfo .cart_bz i.icon_thh {
+  background-position: 0 -18px;
+}
+
+.shopcar-container .cart_btinfo .cart_bz i.icon_bcj {
+  background-position: 0 -38px;
 }

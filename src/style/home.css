@@ -516,6 +516,11 @@
   opacity: 0;
 }
 
+.brands .command-contant .brand-pictures li a span img, .brand-fashion .command-contant .brand-pictures li a span img {
+  width: 110px;
+  height: 50px;
+}
+
 .brands .command-contant .brand-pictures li:hover span.show, .brand-fashion .command-contant .brand-pictures li:hover span.show {
   opacity: 0.8;
 }

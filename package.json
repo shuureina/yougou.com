@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/shuureina/yougou.com/issues"
   },
-  "homepage": "https://github.com/shuureina/yougou.com#readme"
+  "homepage": "https://github.com/shuureina/yougou.com#readme",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "requirejs": "^2.3.6"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }

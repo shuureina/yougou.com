@@ -4,6 +4,9 @@
 .shopcar-container{
     width:$w9;
     margin:0 auto;
+    a{
+        color:#666
+    }
     .logo-title-wrap{
          margin-top:15px;
          height: 50px;
@@ -72,6 +75,9 @@
             border-bottom: 1px solid #eee;
             display: flex;
         }
+        .goods-item:last-of-type{
+            border-bottom: none;
+        }
         .title-list{
             display: flex;
             height: 42px;
@@ -120,14 +126,109 @@
                         padding: 16px;
                         width: 120px;
                     }
+                    &.pd-price,&.pd-count,&.pd-totalPrice,&.pd-handle{
+                        text-align:center;
+                    }
+                    &.pd-count{
+                        display: flex;
+                        input,a{
+                            border:1px solid  #ccc;
+                        }
+                        input{
+                            width: 28px;
+                            height: 22px;
+                            border-left:0;
+                            border-right:0;
+                        }
+                        a{
+                            display: inline-block;
+                            width: 22px;
+                            height: 22px;
+                            line-height: 20px;
+                            color:#000;
+                            font-size:16px;
+                        }
+                    }
+                    &.pd-totalPrice{
+                         font-size: 14px;
+                         color:#333;
+                         font-weight: bold;
+                    }
+                  
                 }
             }
            }
         }
+        .content-del-wrap{
+            height: 40px;
+            padding-bottom:20px;
+            &>div{
+                padding:10px 37px 0 0 ;
+            }           
+        }
+        .content-settlement-wrap{
+            justify-content: space-between;
+            height: 54px;
+            background: #eee;
+            text-align: center;
+            border-bottom:none ;
+            a{
+                display: inline-block;
+                color:#fff;
+                background: #333;
+            }
+            .settlement-l{
+                a{
+                    margin:15px 0 0 20px;
+                    height: 21px;
+                    width: 72px;
+                    line-height: 21px;
+                }
+            }  
+            .settlement-r{
+                display: flex;
+                 line-height: 54px;
+                 .goods-allPrice{
+                     margin-right:50px;
+                     font-weight: bold;
+                     .allprice{
+                         font-size:16px;
+                         strong{
+                             font-size: 20px;
+                             color:#333;
+                         }
+                     }
+                 }
+                 .settle{
+                     display: block;
+                     width: 129px;
+                     height: 54px;
+                     font-size: 14px;
+                 }
+            }
 
-
+        }
     }
     .cart_btinfo{
-
+        margin-bottom: 20px;
+          text-align: right;
+          line-height: 22px;
+          border-bottom: 1px solid #d9d9d9;
+          .cart_bz{
+              i{
+                  margin-left: 10px;
+                  display: inline-block;
+                  height: 16px;
+                  width: 18px;
+                  vertical-align: middle;
+                  background: url(../image/shopcart-sprite-v4.png) 0 0 no-repeat;
+                  &.icon_thh{
+                      background-position: 0 -18px;
+                  }
+                  &.icon_bcj{
+                      background-position: 0 -38px;
+                  }
+              }
+          }
     }
 }
