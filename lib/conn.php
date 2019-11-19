@@ -1,5 +1,5 @@
 <?php
-
+ header('Access-Control-Allow-Origin:*'); // CORS
 header("content-type:text/html;charset=utf-8");
 
 $myslq_conf = array(

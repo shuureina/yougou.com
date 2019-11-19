@@ -295,7 +295,62 @@
     }
 }
 
+//    <!-- <div class="dg_content" style="width: 430px; height: 133px;"><div><p style="margin-left:20px;"><img style="width:33px;height:33px;" src="../template/common/images/ubg14.png"><em style="margin-left:10px;font-size:14px;font-weight:bold;">商品已加入购物袋中！</em></p><p style="margin-left:63px;margin-top:5px;">您的购物袋中共有<em style="color:#333;font-size: 13px; font-family: 微软雅黑;">3</em>件商品，金额共计<em style="color:#333;font-size: 13px; font-family: 微软雅黑;">2034</em>元。</p><p style="margin-left:63px;margin-top:15px;"><a style="background: none repeat scroll 0% 0% #333;border: 1px solid #333;color: #FFF;padding:3px 12px 3px 23px;display: inline-block;width:50px;vertical-align: middle;" onclick="YouGou.Biz.ShoppingCart.checkShoppingCart();" href="?" id="close_bind">去结算</a>&nbsp;&nbsp;&nbsp;<a href="?" class="cblue">继续购物&gt;&gt;</a></p><p style="margin-left:63px;margin-top:10px;"><em id="bind_tip2" style="color: #AAA;">倒计时5秒后自动关闭</em></p></div></div> -->
 
+.dg-wrap{
+     width: 100%;
+     height: 100%;
+     background: #ddd;
+     display: none;
+    .dg-content{
+        padding:20px;
+        width: 440px;
+        height: 160px;
+        position: fixed;
+       top:50%;
+       left:50%;
+       margin-top:-80px;
+       margin-left:-220px;
+       box-sizing:border-box;
+       background: #fff;
+       border:1px solid #ccc;
+       .close-btn{
+           position: absolute;
+           right: -40px;
+           top:10px;
+       }
+       &>div{
+              margin:10px  63px ;
+
+       }
+       .dg-item1{
+           margin-left:20px;
+           font-size: 14px;
+           font-weight: bold;
+           img{
+              width: 33px;
+              height: 33px;
+              margin-right: 10px;
+           }
+       }
+       .dg-item2{
+           a{
+               color:#333;
+               &:first-of-type{
+                   display: inline-block;
+                   padding:3px 13px 3px 23px;
+                   margin-right: 10px;
+                   color:#fff;
+                   background: #333;
+               }
+           }
+       }
+       .dg-item3{
+           color:#aaa;
+       }
+       
+    }
+}
 .product-wrap,.size-list-wrap,.Notice-wrap,.evaluate-wrap{
      margin-top:120px;
      .title{

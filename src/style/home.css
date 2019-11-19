@@ -1,3 +1,15 @@
+.clearfix:after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
 .log-container {
   background: #fff;
   position: relative;
@@ -114,27 +126,39 @@
 }
 
 .log-container .sub-nav-wrap {
-  display: none;
   position: absolute;
-  top: 222px;
-  padding: 30px 0 70px 0;
+  top: 219px;
   width: 100%;
-  background: #fff;
+  z-index: 999;
+}
+
+.log-container .sub-nav-wrap .content {
+  padding: 30px 0 70px 0;
+  position: absolute;
+  width: 100%;
   border-bottom: 3px solid #000;
+  background: #fff;
+  display: none;
 }
 
 .log-container .sub-nav-wrap .sub-nav-list {
+  padding-left: 20px;
   width: 1190px;
   margin: 0 auto;
-  display: flex;
+  box-sizing: border-box;
 }
 
 .log-container .sub-nav-wrap .sub-nav-list dl {
+  float: left;
   margin: 0 70px;
 }
 
 .log-container .sub-nav-wrap .sub-nav-list dl:first-of-type {
   margin: 0 70px 0 0;
+}
+
+.log-container .sub-nav-wrap .sub-nav-list dl:last-of-type {
+  margin: 0 0 0 70px;
 }
 
 .log-container .sub-nav-wrap .sub-nav-list dl dt {
@@ -149,7 +173,7 @@
 
 .log-container .sub-nav-wrap .sub-nav-list dl dd {
   margin-top: 12px;
-  width: 60px;
+  width: 75px;
 }
 
 .log-container .sub-nav-wrap .sub-nav-list dl dd a {
@@ -165,6 +189,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 
 .log-container.nav-fixed .line {
@@ -181,6 +206,10 @@
 
 .log-container.nav-fixed .nav-list .item {
   padding: 9px;
+}
+
+.log-container.nav-fixed .sub-nav-wrap {
+  top: 53px;
 }
 
 .banner {

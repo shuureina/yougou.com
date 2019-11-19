@@ -16,6 +16,7 @@
         margin:0 auto;
         display:flex;
         justify-content:space-between;
+     
     .nav-list{
        width:930px;
        display:flex;
@@ -99,21 +100,32 @@
     }
 }
 .sub-nav-wrap{
-    display: none;
     position:absolute;
-    top:222px;
-    padding:30px 0 70px 0;
+    top:219px;
     width:100%;
-    background: $color;
-    border-bottom:$bt_bor;
+    z-index: 999;
+    .content{
+        padding:30px 0 70px 0;
+        position: absolute;
+         width: 100%;
+         border-bottom:$bt_bor;
+         background: $color;
+         display: none;
+     
+    }
     .sub-nav-list{
+        padding-left: 20px;
         width:$width;
         margin:0 auto;
-        display: flex;
+        box-sizing: border-box;
         dl{
+            float: left;
             margin:0 70px;
             &:first-of-type{
                  margin:0 70px 0 0;
+            }
+            &:last-of-type{
+                margin:0 0 0 70px;
             }
             dt{
                 padding-bottom:13px;
@@ -125,12 +137,13 @@
             }
             dd{
                  margin-top:12px;
-                 width:60px;
+                 width:75px;
                 a{
                     color:$color6;
                 }
             }
         }
+   
     }
 }
 .line{
@@ -143,6 +156,7 @@
     top:0;
     left:0;
     right:0;
+    z-index:1000;
     .line{
         border-bottom:$bt_bor;
     }
@@ -156,6 +170,9 @@
         .item{
             padding:9px;
         } 
+    }
+    .sub-nav-wrap{
+        top:53px;
     }
  }
     
@@ -340,59 +357,6 @@
                   .swiper-item-wrap{
                       width:920*3px;
                       display:flex;
-                    //   .swiper-item{
-                    //       padding:10px;
-                    //       width:210px;
-                    //       .goods-img{
-                    //           background:$color;
-                    //           a{
-                    //               display:inline-block;
-                    //               margin:30px 0;
-                    //               width:210px;
-                    //               height:210px;
-                    //               img{
-                    //                   height: 100%;
-                    //                   width:100%;
-                    //               }
-                    //           }
-                    //       }
-                    //       .brand-img{
-                    //           margin-top:15px;
-                    //           width:54px;
-                    //           height:24px;
-                    //       }
-                    //       p{
-                    //           margin-top:10px;
-                    //           overflow: hidden;
-                    //           white-space:nowrap;
-                    //           text-overflow:ellipsis;
-                    //           a{
-                    //               color:$color6;
-                    //           }
-                    //       }
-                    //       .price-wrap{
-                    //           margin:15px 0  10px;
-                    //           position: relative;
-                    //           font-weight:$nav_fw;
-                    //         font-size:16px;
-                    //         color:$color3;
-                    //          .colloct{
-                    //              display: none;
-                    //              position: absolute;
-                    //              top:5px;
-                    //              right:8px;
-                    //              width: 15px;
-                    //              height:15px;
-                    //              background: url(../image/css_sprites.png) -38px -243px;
-                    //          }
-                    //       }
-                    //       &:hover{
-                    //           background: #f6f6f6;
-                    //           .colloct{
-                    //               display: block;
-                    //           }
-                    //       }
-                    //   }
                   }
               }
               //左右箭头
