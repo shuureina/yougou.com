@@ -1,3 +1,15 @@
+.clearfix:after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
 .shopcar-container {
   width: 990px;
   margin: 0 auto;
@@ -188,6 +200,11 @@
   font-weight: bold;
 }
 
+.shopcar-container .content-wrap .goods-list .goods-item .single-list li.pd-img img {
+  width: 60px;
+  height: 60px;
+}
+
 .shopcar-container .content-wrap .content-del-wrap {
   height: 40px;
   padding-bottom: 20px;
@@ -195,6 +212,10 @@
 
 .shopcar-container .content-wrap .content-del-wrap > div {
   padding: 10px 37px 0 0;
+}
+
+.shopcar-container .content-wrap .content-del-wrap > div.allcheckbox {
+  margin-left: 10px;
 }
 
 .shopcar-container .content-wrap .content-settlement-wrap {

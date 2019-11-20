@@ -154,7 +154,12 @@
                          color:#333;
                          font-weight: bold;
                     }
-                  
+                  &.pd-img{
+                      img{
+                          width: 60px;
+                          height: 60px;
+                      }
+                  }
                 }
             }
            }
@@ -164,6 +169,9 @@
             padding-bottom:20px;
             &>div{
                 padding:10px 37px 0 0 ;
+                &.allcheckbox{
+                    margin-left:10px;
+                }
             }           
         }
         .content-settlement-wrap{

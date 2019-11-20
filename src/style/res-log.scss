@@ -228,6 +228,10 @@
                 &.show{
                     display: block;
                 }
+
+                .code-list,.mobile-list{
+                    display: none;
+                }
                 .form-group{
                     .icon{
                         display: block;
@@ -236,6 +240,9 @@
                         background: url(../image/icon_sig_reg.png) -180px -27px no-repeat;
                         &.icon-psw{
                            background-position: -180px -61px;
+                        }
+                        &.icon-code{
+                            background-position: 0 -95px;
                         }
                     }
 

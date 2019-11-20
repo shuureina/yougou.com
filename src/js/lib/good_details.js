@@ -1,11 +1,10 @@
-let baseUrl = "http://127.0.0.1:8080/yougou.com/";
+let baseUrl = "http://127.0.0.1:8080/yougou.com";
 
 
 define(['jquery', 'cookie'], function ($, cookie) {
     return {
         render: function (cb) {
             let id = location.search.split('=')[1];
-            console.log(id);
             $.ajax({
                 type: "get",
                 url: `${baseUrl}/lib/getitems.php`,
@@ -16,9 +15,7 @@ define(['jquery', 'cookie'], function ($, cookie) {
                 success: function (res) {
                     let b_imgs = res.b_imgs.split(',');
                     let brand_pic = JSON.parse(res.brand_pic);
-                    console.log(res);
-                    console.log(brand_pic);
-                    console.log(b_imgs);
+                    // console.log(res);
                     if (res.id = id) {
                         let icons = ``;
                         let pImg = `
@@ -35,7 +32,7 @@ define(['jquery', 'cookie'], function ($, cookie) {
                             <del  class="oriPrice">￥<span>${res.ori_pri}</span></del>
                         </div>
                         `;
-                        let count = `<input type="text" id="num" class="num" value="1" min="1" max="${res.num}">`;
+                        let count = `<input type="number" id="num" class="num" value="1" min="1" max="${res.num}">`;
                         b_imgs.forEach((i) => {
                             // console.log(i);
                             icons += `
@@ -52,7 +49,7 @@ define(['jquery', 'cookie'], function ($, cookie) {
                         $('.goods-title').append(`${res.title}`);
                         $('.goods-price').append(price);
                         $('.goods-count').prepend(count);
-                        cb && cb(res.id,res.price,res.num);
+                        cb && cb(res.id,res.price);
                     }
                 }
             });
@@ -71,7 +68,7 @@ define(['jquery', 'cookie'], function ($, cookie) {
                 shop = JSON.parse(shop);
                 if (shop.some(elm => elm.id == id)) {//同一个id数量相加    
                     shop.forEach(elm => {
-                        elm.id == id ? elm.num =parseInt(elm.num) + parseInt(num) : null;
+                        elm.id == id ? elm.num = parseInt(num) : null;
                     });
                 } else {//不同id 直接添加
                     shop.push(goods);

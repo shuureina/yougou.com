@@ -1,3 +1,15 @@
+.clearfix:after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
 .title-wrap {
   margin: 0 auto;
   width: 990px;
@@ -262,6 +274,10 @@
   display: block;
 }
 
+.res-log-contant.log-contant .form-wrap .reg-list-wrap .code-list, .res-log-contant.log-contant .form-wrap .reg-list-wrap .mobile-list {
+  display: none;
+}
+
 .res-log-contant.log-contant .form-wrap .reg-list-wrap .form-group .icon {
   display: block;
   width: 48px;
@@ -271,6 +287,10 @@
 
 .res-log-contant.log-contant .form-wrap .reg-list-wrap .form-group .icon.icon-psw {
   background-position: -180px -61px;
+}
+
+.res-log-contant.log-contant .form-wrap .reg-list-wrap .form-group .icon.icon-code {
+  background-position: 0 -95px;
 }
 
 .res-log-contant.log-contant .form-wrap .cooperation {

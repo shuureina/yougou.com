@@ -72,14 +72,14 @@
           <div class="form-wrap">
 
               <ul class="reg-tabs">
-                  <li class="tab-item1 reg-item"><a href="javascript:;">登录</a></li>
+                  <li class="tab-item1 reg-item"><a href="./login.html">登录</a></li>
                   <li class="active reg-item"><a href="javascript:;">注册</a></li>
               </ul>
               <div class="form-container">
                   <dl class="reg-list">
                       <dd>
                           <div class="form-group">
-                              <label for="phone">手机号</label><input type="text" id="phone" name="phone" placeholder="请输入您的手机号码">  
+                              <label for="phone">手机号</label><input type="text" id="phone" name="phone" class="judgebox" placeholder="请输入您的手机号码">  
                           </div>
                       </dd>
                       <dt>
@@ -89,7 +89,33 @@
                           <div class="righttips"></div>
                       </dt>
                   </dl>
-                  <dl class="reg-list code-list">
+                  <dl class="reg-list">
+                    <dd>
+                        <div class="form-group">
+                            <label for="username">用户名</label><input type="text" id="username" name="username" class="judgebox" placeholder="字母/数字均可,3-16字符以内">  
+                        </div>
+                    </dd>
+                    <dt>
+                        <div class="errortips">
+                          请输入用户名
+                        </div>
+                        <div class="righttips"></div>
+                    </dt>
+                </dl>
+                <dl class="reg-list">
+                    <dd>
+                        <div class="form-group">
+                            <label for="email">邮箱</label><input type="text" id="email" name="email" placeholder="请输入您的邮箱">  
+                        </div>
+                    </dd>
+                    <dt>
+                        <div class="errortips">
+                          请输入邮箱
+                        </div>
+                        <div class="righttips"></div>
+                    </dt>
+                </dl>
+                  <!-- <dl class="reg-list code-list">
                       <dd>
                           <div class="form-group code-wrap">
                               <label for="check_code">验证码</label><input type="text" id="check_code" name="check_code">   
@@ -120,7 +146,7 @@
                           </div>
                           <div class="righttips"></div>
                       </dt>
-                  </dl>
+                  </dl> -->
                   <dl class="reg-list">
                       <dd>
                           <div class="form-group">
@@ -148,7 +174,7 @@
                       </dt>
                   </dl>
                   <div class="form-group1">
-                      <input type="checkbox"><label for="">我已阅读并同意</label><a href="javascript:;">《优购会员注册协议》</a><span id="ruleTips" class="errortips">请阅读交易条款</span>
+                      <input type="checkbox" checked="checked"><label for="">我已阅读并同意</label><a href="javascript:;">《优购会员注册协议》</a><span id="ruleTips" class="errortips">请阅读交易条款</span>
                   </div>
                   <div class="submit-wrap">
                       <input type="button" class="reg-sub" value="确认并注册" title="立即注册">
@@ -176,4 +202,5 @@
     </footer>
     <!-- footer end -->
     </body>
+    <script src="../js/require.js" data-main="../js/main.reg"></script>
     </html>

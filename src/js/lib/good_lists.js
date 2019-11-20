@@ -1,4 +1,4 @@
-let baseUrl = "http://127.0.0.1:8080/yougou.com/";
+let baseUrl = "http://127.0.0.1:8080/yougou.com";
 
 define(['jquery','slider'], function ($,slider) {
     return {

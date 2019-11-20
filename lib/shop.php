@@ -1,7 +1,7 @@
 <?php
     include('./conn.php');
 
-    $idList = $_REQUEST['idlist'];
+    $idList = $_REQUEST['idList'];
 
     $sql = "select * from products where id in ($idList)";
 
