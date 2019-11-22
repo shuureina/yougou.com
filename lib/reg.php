@@ -1,5 +1,7 @@
 <?php
 
+
+header('Access-Control-Allow-Origin:*'); // CORS
 //1.连接数据库
  include('./conn.php');
 
@@ -16,19 +18,23 @@
  // 4. 根据验证结果进行操作 插入/提示
 
 if($res->num_rows>0){
-    echo '{"msg":"该手机号已存在"}';
+    echo '{"msg":"该手机号已存在,请点击登录","flag":"true"}';
     $mysqli->close();
-    die ;
+    die;
+}else{
+    echo '{"flag":"false"}';
 }
 
-$insertSql = "insert into user (`user_name`,`user_pass`,`user_email`,`user_phone`)values('$username','$password','$email','$phone')";
-
-
-$res=$mysqli->query($insertSql);
-
-if($res){
-    echo '{"msg":"注册成功","src":"./index.html"}';
+if(isset($_REQUEST['submit']) && $_REQUEST['submit'] == "确认并注册" ){
+    $insertSql = "insert into user (`user_name`,`user_pass`,`user_email`,`user_phone`)values('$username','$password','$email','$phone')";
+    $res=$mysqli->query($insertSql);
+    
+    if($res){
+        echo '{"msg":"注册成功","src":"./index.html"}';
+    }
 }
+
+
 
 $mysqli->close();
 

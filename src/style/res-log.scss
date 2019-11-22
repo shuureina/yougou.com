@@ -193,6 +193,34 @@
                         right:92px;
                     }
                 }
+                .psdStrength{
+                    position: absolute;
+                    right: 22px;
+                    bottom: 13px;
+                    display: none;
+                    em{
+                        margin-right:1px;
+                        width: 46px;
+                        height: 15px;
+                        line-height:15px;
+                        text-align:center;
+                        display: inline-block;
+                        background: #efefef;
+                        color:#c5c4c4;
+                        &.psdlow,&.psdmiddle,&.psdheight{
+                            color:#fff;
+                        }
+                        &.psdlow{
+                            background: #e60011;
+                        }
+                        &.psdmiddle{
+                            background: #febd04;
+                        }
+                        &.psdheight{
+                            background: #094;
+                        }
+                    }
+                }
             }
             .form-group1{
                 text-align: center;

@@ -1,5 +1,5 @@
 <?php
- 
+   header('Access-Control-Allow-Origin:*'); // CORS
  include('./conn.php');
 
  $sql = " select * from products ";

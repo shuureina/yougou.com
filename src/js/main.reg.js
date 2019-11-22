@@ -11,11 +11,8 @@ require.config({
 });
 
 require(['jquery', 'reg'], function ($, reg) {
-    if ($('.form-group input').val() && $('.from-group1 input').prop('checked')) {
+    // console.log()
         reg.regEv('.reg-sub', 'click');
-    }
-    if ($('#phone').val()) {
         reg.regEv('#phone', 'blur');
-    }
-    reg.RegExps();
+    reg.render();
 });

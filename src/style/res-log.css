@@ -233,6 +233,40 @@
   right: 92px;
 }
 
+.res-log-contant .form-wrap .form-container .reg-list .psdStrength {
+  position: absolute;
+  right: 22px;
+  bottom: 13px;
+  display: none;
+}
+
+.res-log-contant .form-wrap .form-container .reg-list .psdStrength em {
+  margin-right: 1px;
+  width: 46px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  display: inline-block;
+  background: #efefef;
+  color: #c5c4c4;
+}
+
+.res-log-contant .form-wrap .form-container .reg-list .psdStrength em.psdlow, .res-log-contant .form-wrap .form-container .reg-list .psdStrength em.psdmiddle, .res-log-contant .form-wrap .form-container .reg-list .psdStrength em.psdheight {
+  color: #fff;
+}
+
+.res-log-contant .form-wrap .form-container .reg-list .psdStrength em.psdlow {
+  background: #e60011;
+}
+
+.res-log-contant .form-wrap .form-container .reg-list .psdStrength em.psdmiddle {
+  background: #febd04;
+}
+
+.res-log-contant .form-wrap .form-container .reg-list .psdStrength em.psdheight {
+  background: #094;
+}
+
 .res-log-contant .form-wrap .form-container .form-group1 {
   text-align: center;
 }
