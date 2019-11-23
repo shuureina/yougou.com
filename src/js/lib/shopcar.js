@@ -2,7 +2,7 @@ let baseUrl = "http://127.0.0.1:8080/yougou.com";
 
 define(['jquery', 'cookie'], function ($,cookie) {
     return {
-        render: function () {
+        render: function (cb) {
             let shop = cookie.get('shop');
             console.log(shop);
             if (shop) {
@@ -64,6 +64,7 @@ define(['jquery', 'cookie'], function ($,cookie) {
                             `  
                         });
                         $('.goods-list').append(temp);
+                        cb && cb();
                     }
                 });
                  
@@ -78,6 +79,9 @@ define(['jquery', 'cookie'], function ($,cookie) {
                 $('.shopcar-container .content').hide();
                 $('.shopcar-container .empty-cart').show();
              }
+        },
+        shopEv: function () {
+            
         }
     }
 })
