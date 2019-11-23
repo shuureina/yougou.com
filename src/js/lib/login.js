@@ -4,7 +4,7 @@ define(['jquery', 'md5'], function ($, md5) {
         logEv: function (selector) {
             $(selector).on('click', function () {
                $.ajax({
-                   type: "get",
+                   type: "post",
                    url: `${baseUrl}/lib/login.php`,
                    data: {
                        username: $('#username').val(),

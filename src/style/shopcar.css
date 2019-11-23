@@ -94,9 +94,48 @@
   box-sizing: border-box;
 }
 
-.shopcar-container .content-wrap > div, .shopcar-container .content-wrap .goods-item {
+.shopcar-container .content-wrap a.bg {
+  display: inline-block;
+  color: #fff;
+  background: #333;
+}
+
+.shopcar-container .content-wrap .content {
+  display: none;
+}
+
+.shopcar-container .content-wrap .content > div, .shopcar-container .content-wrap .content .goods-item {
   border-bottom: 1px solid #eee;
   display: flex;
+}
+
+.shopcar-container .content-wrap .empty-cart {
+  padding: 30px 0;
+  margin: 0 auto;
+  width: 400px;
+}
+
+.shopcar-container .content-wrap .empty-cart img {
+  display: block;
+}
+
+.shopcar-container .content-wrap .empty-cart p {
+  padding-top: 20px;
+}
+
+.shopcar-container .content-wrap .empty-cart p a.gohome {
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.shopcar-container .content-wrap .empty-cart p.you-see {
+  font-size: 14px;
+}
+
+.shopcar-container .content-wrap .empty-cart p.see-info a {
+  display: inline-block;
+  padding-right: 10px;
 }
 
 .shopcar-container .content-wrap .goods-item:last-of-type {
@@ -224,12 +263,6 @@
   background: #eee;
   text-align: center;
   border-bottom: none;
-}
-
-.shopcar-container .content-wrap .content-settlement-wrap a {
-  display: inline-block;
-  color: #fff;
-  background: #333;
 }
 
 .shopcar-container .content-wrap .content-settlement-wrap .settlement-l a {

@@ -85,13 +85,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .goods-wrap .goods-pic-l .samll-pic-wrap .content .small-pic .zoomDiv {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 210px;
-  width: 220px;
   border: 1px solid #eaeaea;
-  background: #999;
-  opacity: 0;
+  background: rgba(153, 153, 153, 0.3);
+  display: none;
+  cursor: move;
 }
 
 .goods-wrap .goods-pic-l .samll-pic-wrap .content .seemorepic a {
@@ -117,6 +114,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .goods-wrap .goods-pic-l .big-pic img {
+  position: absolute;
   width: 800px;
   height: 800px;
 }

@@ -89,6 +89,8 @@ define(['jquery','slider'], function ($,slider) {
                     }
                 });
             };
+            $('.banner').slider();
+            
         }
     }
 });

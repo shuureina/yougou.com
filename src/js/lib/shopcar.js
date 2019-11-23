@@ -2,10 +2,12 @@ let baseUrl = "http://127.0.0.1:8080/yougou.com";
 
 define(['jquery', 'cookie'], function ($,cookie) {
     return {
-        render: function (cb) {
+        render: function () {
             let shop = cookie.get('shop');
             console.log(shop);
             if (shop) {
+                $('.shopcar-container .content').show();
+                $('.shopcar-container .empty-cart').hide();
                 shop = JSON.parse(shop)
                 idList = shop.map(elm => elm.id).join();
                 $.ajax({
@@ -61,12 +63,20 @@ define(['jquery', 'cookie'], function ($,cookie) {
                             </li>
                             `  
                         });
-
                         $('.goods-list').append(temp);
-                       
                     }
                 });
+                 
+                //清除购物车
+                $('.empty-shopcar').on('click', function () {
+                    cookie.set('shop', '', -1);
+                    alert('您确定要清空购物车码？');
+                    location.reload();
+                })
                                    
+            } else {
+                $('.shopcar-container .content').hide();
+                $('.shopcar-container .empty-cart').show();
              }
         }
     }

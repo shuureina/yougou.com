@@ -65,13 +65,10 @@ input[type=number]::-webkit-outer-spin-button{
                     height: 485px;
                     .zoomDiv{
                         position: absolute;
-                        bottom: 0;
-                        right: 0;
-                        height: 210px;
-                        width: 220px;
                         border:1px solid #eaeaea;
-                        background: #999;
-                        opacity:0;   
+                        background: rgba(153, 153, 153, .3);
+                        display: none; 
+                        cursor: move; 
                     }
                 }
                 .seemorepic{
@@ -98,6 +95,7 @@ input[type=number]::-webkit-outer-spin-button{
             border:1px solid #333;
             overflow: hidden;
             img{
+                position: absolute;
                 width: 800px;
                 height: 800px;
             }

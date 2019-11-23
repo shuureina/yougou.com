@@ -53,7 +53,7 @@ define(['jquery', 'cookie'], function ($, cookie) {
                     }
                 }
             });
-
+        
         },
         addItem: function (id,price,num) {
             let shop = cookie.get('shop');
@@ -80,5 +80,6 @@ define(['jquery', 'cookie'], function ($, cookie) {
             }
             cookie.set('shop', JSON.stringify(shop), 1);
         }
-   } 
+
+   }
 });

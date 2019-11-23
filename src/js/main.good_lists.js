@@ -4,7 +4,9 @@ require.config({
         slider:'./lib/jquery-slider',
         good_lists: './lib/good_lists'
     },
-    shim: {}
+    shim: {
+        slider:['jquery']
+    }
 });
 
 require(['jquery', 'good_lists'], function ($,good_lists) {

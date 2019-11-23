@@ -223,6 +223,7 @@
   width: 4000px;
   height: 100%;
   display: flex;
+  position: absolute;
 }
 
 .banner .pic-list .pic-item {
@@ -236,7 +237,7 @@
   background: url(../image/ban3.jpg) center center no-repeat;
 }
 
-.banner .pic-list .pic-item:last-of-type a {
+.banner .pic-list .pic-item.item2 a {
   background-image: url(../image/ban4.jpg);
 }
 
